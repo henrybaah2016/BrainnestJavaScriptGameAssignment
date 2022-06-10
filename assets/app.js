@@ -49,14 +49,14 @@ function playRound(playerSelection, computerSelection) {
 
 let userScore = parseInt(0);
 let computerScore = parseInt(0);
-let win = "You win"
-let lose = "You lose"
-let tie = "It is a tie"
+let win = "You Win! Compiter Loss"
+let lose = "You Lose! Computer Wins"
+let tie = "It is a tie! No Winner Yet"
 
 for(var i=0;i<5;i++){
-  let playerSelection = prompt("Pick a item");
+  let playerSelection = prompt("Pick paper, scissor or rock");
   const computerSelection = computerPlay()
   console.log(playRound(playerSelection, computerSelection))
-  console.log("your score = " + userScore);
-  console.log("Computer's score = " + computerScore);
+  console.log("your score is" + userScore);
+  console.log("Computer's score is" + computerScore);
 }
